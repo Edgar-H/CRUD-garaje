@@ -36,11 +36,6 @@ imageUploader.addEventListener('change', async (e) => {
             headers: {
                 'Content-Type': 'multipart/form-data'
             },
-            onUploadProgress (e) {
-                let progress = Math.round((e.loaded * 100.0) / e.total);
-                /* console.log(progress); */
-                imgUploaderProgress.setAttribute('value', progress);
-            }
         }
     );
     /* console.log(res); */
