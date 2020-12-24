@@ -85,11 +85,11 @@ window.addEventListener('DOMContentLoaded', async (e) => {
           <h3>${shorck.model} ${shorck.brand}</h3>
           <p>${shorck.year} ${shorck.colour}</p>
           <span>$ ${shorck.price}</span>
-          <div>
-            <button class="btn-delete" data-id="${shorck.id}">
+          <div class="btn-function-container">
+            <button class="btns btn-delete" data-id="${shorck.id}">
               🗑 Delete
             </button>
-            <button class="btn-edit" data-id="${shorck.id}">
+            <button class="btns btn-edit" data-id="${shorck.id}">
               🖉 Edit
             </button>
           </div>

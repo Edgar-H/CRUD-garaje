@@ -41,3 +41,25 @@
     }
   }
 }
+
+.btn-function-container {
+  display: flex;
+  width: 85%;
+  margin: 0;
+}
+
+.btns {
+  border: 0;
+  padding: 4px 6px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  margin: auto;
+}
+.btn-delete {
+  background: #ff1c1c;
+}
+
+.btn-edit {
+  background: #208cf1;
+}
