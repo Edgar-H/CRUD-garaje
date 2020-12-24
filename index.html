@@ -15,76 +15,50 @@
   <section class="shadow-lg p-3 mb-5 bg-white rounded container-global">
     <div class="add-garaje">
       <p>Garaje</p>
+
       <form action="" id="stock-form" class="add-stock">
         <div class="add-stock">
-
-          <div class="preview col-lg-3 col-md-3 col-s-12">
-            <img id="img-preview">
-            <input type="file" accept="image/*" id="img-uploader" required>
+          <div class="preview col-lg-3 col-md-3 col-s-8">
+            <div class="col-lg-12 col-md-12 col-s-12">
+              <img id="img-preview">
+            </div>
+            <input type="file" accept="image/*" id="img-uploader">
             <input type="button" value="Cargar foto"  onclick="document.getElementById('img-uploader').click('')">
           </div>
 
-
-
           <div class="info-add  col-lg-9 col-md-9 col-s-12">
-            <div class="form-group">
+            <div class="form-group col-lg-6 col-md-6 col-s-6">
               <label for="model">Modelo</label>
-              <input type="text" name="model" placeholder="Sentra" id="model" required>
+              <input type="text" name="model" placeholder="Sentra" id="stock-model" required>
             </div>
-            <div class="form-group">
+            <div class="form-group col-lg-6 col-md-6 col-s-6">
               <label for="brand">Marca</label>
-              <input type="text" name="brand" placeholder="Nissan" id="brand" required>
+              <input type="text" name="brand" placeholder="Nissan" id="stock-brand" required>
             </div>
-            <div class="form-group">
+            <div class="form-group col-lg-6 col-md-6 col-s-6">
               <label for="colour">Color</label>
-              <input type="text" name="colour" placeholder="Azul" id="colour" required>
+              <input type="text" name="colour" placeholder="Azul" id="stock-colour" required>
             </div>
-            <div class="form-group">
+            <div class="form-group col-lg-6 col-md-6 col-s-6">
               <label for="year">Año</label>
-              <input type="text" name="year" placeholder="2020" maxlength="4" id="year" required>
+              <input type="text" name="year" placeholder="2020" maxlength="4" id="stock-year" required>
             </div>
-            <div class="form-group">
+            <div class="form-group col-lg-6 col-md-6 col-s-6">
               <label for="price">Precio</label>
-              <input type="text" name="price" placeholder="317,900" id="price" required>
+              <input type="text" name="price" placeholder="317,900" id="stock-price" required>
             </div>
           </div>
         </div>
         <div class="btn-container">
-          <input type="submit" value="Agregar al inventario" class="btn" id="btn-addstock-form">
+          <input type="submit" value="Guardar" class="btn" id="btn-addstock-form">
         </div>
-
-
       </form>
 
     </div>
     <div class="stock-garaje">
-      <table class="table">
-        <thead  class="table-head">
-          <tr>
-            <th scope="col">Car</th>
-            <th scope="col">Brand</th>
-            <th scope="col">Colour</th>
-            <th scope="col">Year</th>
-            <th scope="col">Price</th>
-            <th scope="col">Options</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="items-container">
-            <td class="principal">
-              <div class="col-lg-12 col-md-12 col-s-12">
-                <img>
-              </div>
-              <p class="col-lg-12 col-md-12 col-s-12">Sentra</p>
-            </td>
-            <td>Nissan</td>
-            <td>Azul</td>
-            <td>2020</td>
-            <td>317,900</td>
-            <td>00</td>
-          </tr>
-        </tbody>
-      </table>
+      <p>Coches en el Garaje</p>
+      <div class="garaje-container" id="stock-container">
+      </div>
     </div>
   </section>
 

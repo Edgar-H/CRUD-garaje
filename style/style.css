@@ -23,7 +23,7 @@ body {
   font-size: 40px;
   font-weight: 500;
   text-align: center;
-  margin: 20px;
+  margin: 8px;
 }
 
 .add-stock {
@@ -32,6 +32,9 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #img-uploader {
@@ -40,6 +43,7 @@ body {
 
 .preview {
   padding: 10px;
+  margin-bottom: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,9 +54,23 @@ body {
       flex-wrap: wrap;
 }
 
-.preview img {
-  width: 100%;
+.preview div {
   height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.preview div img {
+  width: 80%;
+  max-width: 170px;
+  min-width: 100px;
+  height: 100%;
+  max-height: 190px;
+  min-height: 120px;
   border-radius: 4px;
   background-image: url("../images/photo.svg");
   background-repeat: no-repeat;
@@ -60,12 +78,13 @@ body {
 }
 
 .preview input {
-  width: 50%;
   padding: 6px;
+  margin: 10px;
   background: #248f48;
   color: #fff;
   border: 0;
   border-radius: 5px;
+  max-height: 20%;
 }
 
 .preview input:hover {
@@ -86,7 +105,6 @@ body {
 .form-group {
   font-size: 18px;
   color: #2a2a2a;
-  width: 40%;
   padding: 5px;
 }
 
@@ -131,40 +149,53 @@ body {
   margin-top: 20px;
 }
 
-.table-head {
-  background: #6336bf;
+.stock-garaje > p {
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
   color: #fff;
+  background: #2b4734;
+  text-align: center;
+  border-radius: 5%;
 }
 
-.principal {
-  width: 100%;
+.garaje-container {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.principal div img {
-  width: 100%;
-  height: 100px;
+.garaje-container div {
+  background: #8f744c38;
+  margin: 16px;
   padding: 8px;
-  background-image: url("../images/photo.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  border-radius: 8px;
 }
 
-.principal p {
-  width: 100%;
-  text-align: center;
-  padding: 5px;
+.garaje-container div h3 {
+  color: #161616;
+  font-size: 20px;
+  margin: 0;
 }
 
-/* .items-container {
-  th,
-  td {
-    background-color: green;
-    text-align-last: center;
-  }
-} */
+.garaje-container div p {
+  color: #5d5d5d;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.garaje-container div span {
+  color: #0779d6;
+}
 /*# sourceMappingURL=style.css.map */
