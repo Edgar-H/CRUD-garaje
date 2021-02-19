@@ -1,13 +1,13 @@
   // Firebase
 // Your web app's Firebase configuration
-    var firebaseConfig = {
-      apiKey: "AIzaSyD5tlyQP-Ea_GR0r0HbXMfQPswD8Fu10vY",
-      authDomain: "crud-coches.firebaseapp.com",
-      projectId: "crud-coches",
-      storageBucket: "crud-coches.appspot.com",
-      messagingSenderId: "194057359056",
-      appId: "1:194057359056:web:26671bbf7f1b0ed0bd58d5"
-    };
+  var firebaseConfig = {
+    apiKey: "AIzaSyAu587WSxz3tXXaysEv4kaENrqjpK2yuk0",
+    authDomain: "crud-coches-6f71a.firebaseapp.com",
+    projectId: "crud-coches-6f71a",
+    storageBucket: "crud-coches-6f71a.appspot.com",
+    messagingSenderId: "381746401589",
+    appId: "1:381746401589:web:6ea29d5c3293905ad7fc7c"
+  };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
     // Firebase
